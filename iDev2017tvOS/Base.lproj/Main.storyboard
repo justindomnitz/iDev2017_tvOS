@@ -50,12 +50,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GPy-XL-7Tt">
-                                <rect key="frame" x="20" y="216" width="1880" height="796"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Vah-EK-9Rg">
-                                <rect key="frame" x="60" y="248" width="860" height="732"/>
+                                <rect key="frame" x="20" y="208" width="940" height="812"/>
                                 <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hxl-xh-RdM">
                                     <size key="itemSize" width="70" height="900"/>
@@ -65,7 +61,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="homeCollectionCell" id="8nL-db-ulr" customClass="HomeCollectionViewCell" customModule="iDev2017tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="-84" width="70" height="900"/>
+                                        <rect key="frame" x="0.0" y="-44" width="70" height="900"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="70" height="900"/>
@@ -89,30 +85,26 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="240" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="OiT-fg-Aqw">
-                                <rect key="frame" x="960" y="248" width="920" height="732"/>
-                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="920" id="1kd-lC-WfI"/>
-                                </constraints>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OiT-fg-Aqw">
+                                <rect key="frame" x="960" y="208" width="940" height="812"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Vah-EK-9Rg" firstAttribute="top" secondItem="uik-Iy-8Ef" secondAttribute="bottom" constant="40" id="1Sd-ew-MwT"/>
-                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="leading" secondItem="Vah-EK-9Rg" secondAttribute="trailing" constant="40" id="2IW-qC-S8u"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GPy-XL-7Tt" secondAttribute="bottom" constant="8" symbolic="YES" id="6OM-tW-eje"/>
-                            <constraint firstItem="GPy-XL-7Tt" firstAttribute="top" secondItem="uik-Iy-8Ef" secondAttribute="bottom" constant="8" symbolic="YES" id="8Ar-KA-pzG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OiT-fg-Aqw" secondAttribute="bottom" id="1P3-sw-AVz"/>
                             <constraint firstItem="uik-Iy-8Ef" firstAttribute="leading" secondItem="JWA-8S-Sqn" secondAttribute="leading" constant="20" symbolic="YES" id="B76-WC-rGR"/>
-                            <constraint firstAttribute="trailing" secondItem="OiT-fg-Aqw" secondAttribute="trailing" constant="40" id="Egd-q4-Zoe"/>
-                            <constraint firstItem="Vah-EK-9Rg" firstAttribute="leading" secondItem="JWA-8S-Sqn" secondAttribute="leadingMargin" constant="40" id="Fu4-oT-YeM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OiT-fg-Aqw" secondAttribute="bottom" constant="40" id="JnK-dp-2QL"/>
-                            <constraint firstItem="GPy-XL-7Tt" firstAttribute="leading" secondItem="JWA-8S-Sqn" secondAttribute="leading" constant="20" symbolic="YES" id="L0n-OC-vJ1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OiT-fg-Aqw" secondAttribute="trailing" id="JML-5F-N0l"/>
+                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="width" secondItem="Vah-EK-9Rg" secondAttribute="width" id="LKz-kR-MjL"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uik-Iy-8Ef" secondAttribute="trailing" id="P1o-EK-KsK"/>
-                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="top" secondItem="uik-Iy-8Ef" secondAttribute="bottom" constant="40" id="TX6-Kh-GzT"/>
+                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="leading" secondItem="Vah-EK-9Rg" secondAttribute="trailing" id="RRY-Gc-bov"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vah-EK-9Rg" secondAttribute="bottom" id="b8r-y3-Lqb"/>
+                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="height" secondItem="Vah-EK-9Rg" secondAttribute="height" id="gCA-lD-ZaV"/>
                             <constraint firstItem="uik-Iy-8Ef" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="hZg-h4-qA7"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GPy-XL-7Tt" secondAttribute="trailing" id="jkB-Dq-6ec"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vah-EK-9Rg" secondAttribute="bottom" constant="40" id="kNt-N1-GbU"/>
+                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="top" secondItem="uik-Iy-8Ef" secondAttribute="bottom" id="jkn-Zk-2ao"/>
+                            <constraint firstItem="Vah-EK-9Rg" firstAttribute="top" secondItem="uik-Iy-8Ef" secondAttribute="bottom" id="rXk-ji-CuU"/>
+                            <constraint firstItem="Vah-EK-9Rg" firstAttribute="leading" secondItem="JWA-8S-Sqn" secondAttribute="leadingMargin" id="ugd-Uk-yZd"/>
+                            <constraint firstItem="OiT-fg-Aqw" firstAttribute="leading" secondItem="Vah-EK-9Rg" secondAttribute="trailing" id="w18-Rf-zwH"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" id="aJN-GH-iaI"/>

@@ -1,6 +1,6 @@
 //
 //  HomeViewController.swift
-// iDev2017tvOS
+//  iDev2017tvOS
 //
 //  Created by Justin Domnitz on 7/11/17.
 //  Copyright © 2017 Lowyoyo, LLC. All rights reserved.
@@ -67,7 +67,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "TwitterCell", for: indexPath) as? TweetTableViewCell {
             
-            cell.backgroundColor = UIColor.brown
             cell.tweet = tweets[indexPath.section][indexPath.row]
             
             return cell

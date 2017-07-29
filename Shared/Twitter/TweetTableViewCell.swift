@@ -1,6 +1,6 @@
 //
 //  TweetTableViewCell.swift
-// iDev2017tvOS
+//  iDev2017tvOS
 //
 //  Created by Justin Domnitz on 7/11/17.
 //  Copyright © 2017 Lowyoyo, LLC. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 
 class TweetTableViewCell: UITableViewCell {
-
+    
     var tweet: Tweet? {
         didSet {
             updateUI()
@@ -59,3 +59,5 @@ class TweetTableViewCell: UITableViewCell {
         
     }
 }
+
+

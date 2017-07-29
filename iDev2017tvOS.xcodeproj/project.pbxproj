@@ -347,6 +347,11 @@
 					F51FC24B1F2CCB8900E6D00D = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = GBDZQKUR6E;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F51FC2601F2CCB8900E6D00D = {
 						CreatedOnToolsVersion = 9.0;
@@ -364,6 +369,9 @@
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes.appletvos = {
+								enabled = 1;
+							};
 							com.apple.iCloud = {
 								enabled = 1;
 							};
@@ -545,7 +553,7 @@
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iDev2017iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -568,7 +576,7 @@
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iDev2017iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017iOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -723,7 +731,7 @@
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
 			name = Debug;
 		};
@@ -769,7 +777,7 @@
 				SDKROOT = appletvos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = 3;
-				TVOS_DEPLOYMENT_TARGET = 9.2;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

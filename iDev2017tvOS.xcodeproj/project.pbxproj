@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F51FC24F1F2CCB8900E6D00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */; };
-		F51FC2511F2CCB8900E6D00D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC2501F2CCB8900E6D00D /* FirstViewController.swift */; };
+		F51FC2511F2CCB8900E6D00D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */; };
 		F51FC2531F2CCB8900E6D00D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC2521F2CCB8900E6D00D /* SecondViewController.swift */; };
 		F51FC2561F2CCB8900E6D00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FC2541F2CCB8900E6D00D /* Main.storyboard */; };
 		F51FC2581F2CCB8900E6D00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51FC2571F2CCB8900E6D00D /* Assets.xcassets */; };
@@ -68,7 +68,7 @@
 /* Begin PBXFileReference section */
 		F51FC24C1F2CCB8900E6D00D /* iDev2017iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDev2017iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F51FC2501F2CCB8900E6D00D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F51FC2521F2CCB8900E6D00D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F51FC2551F2CCB8900E6D00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51FC2571F2CCB8900E6D00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 			children = (
 				F51FC2AB1F2CDB3600E6D00D /* View Controllers */,
 				F51FC2AA1F2CDB2700E6D00D /* xibs */,
+				F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */,
 				F51FC2541F2CCB8900E6D00D /* Main.storyboard */,
 				F51FC2571F2CCB8900E6D00D /* Assets.xcassets */,
 				F51FC2591F2CCB8900E6D00D /* LaunchScreen.storyboard */,
@@ -192,8 +193,7 @@
 		F51FC2AB1F2CDB3600E6D00D /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */,
-				F51FC2501F2CCB8900E6D00D /* FirstViewController.swift */,
+				F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */,
 				F51FC2521F2CCB8900E6D00D /* SecondViewController.swift */,
 			);
 			path = "View Controllers";
@@ -440,7 +440,7 @@
 				F51FC24F1F2CCB8900E6D00D /* AppDelegate.swift in Sources */,
 				F51FC2891F2CD19700E6D00D /* Tweet.swift in Sources */,
 				F51FC28A1F2CD19700E6D00D /* User.swift in Sources */,
-				F51FC2511F2CCB8900E6D00D /* FirstViewController.swift in Sources */,
+				F51FC2511F2CCB8900E6D00D /* HomeViewController.swift in Sources */,
 				F51FC2881F2CD19700E6D00D /* MediaItem.swift in Sources */,
 				F51FC2A31F2CD93600E6D00D /* TweetTableViewCell.swift in Sources */,
 			);
@@ -824,6 +824,7 @@
 				F51FC2751F2CCB8A00E6D00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F51FC2761F2CCB8A00E6D00D /* Build configuration list for PBXNativeTarget "iDev2017iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -832,6 +833,7 @@
 				F51FC2781F2CCB8A00E6D00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F51FC2791F2CCB8A00E6D00D /* Build configuration list for PBXNativeTarget "iDev2017iOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -840,6 +842,7 @@
 				F51FC27B1F2CCB8A00E6D00D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5618A551D2491D000531988 /* Build configuration list for PBXProject "iDev2017tvOS" */ = {
 			isa = XCConfigurationList;

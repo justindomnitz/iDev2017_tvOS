@@ -27,6 +27,8 @@ class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         twitterTableView.delegate = self
         twitterTableView.dataSource = self
         
+        twitterTableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "tweetTableViewCell")
+        
         //Collection View
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -65,7 +67,7 @@ class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCell(withIdentifier: "TwitterCell", for: indexPath) as? TweetTableViewCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "tweetTableViewCell", for: indexPath) as? TweetTableViewCell {
             
             cell.tweet = tweets[indexPath.section][indexPath.row]
             

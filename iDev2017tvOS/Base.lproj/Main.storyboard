@@ -95,54 +95,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="920" id="1kd-lC-WfI"/>
                                 </constraints>
-                                <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TwitterCell" id="qil-Jh-QdU" customClass="TweetTableViewCell" customModule="iDev2017tvOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="920" height="240"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qil-Jh-QdU" id="f7v-81-KeL">
-                                            <rect key="frame" x="0.0" y="0.0" width="870" height="240"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I75-r5-7eV">
-                                                    <rect key="frame" x="8" y="8" width="224" height="224"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="224" id="Pie-gl-dP1"/>
-                                                        <constraint firstAttribute="width" constant="224" id="oxG-sa-IvF"/>
-                                                    </constraints>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDp-uF-meO">
-                                                    <rect key="frame" x="240" y="8" width="672" height="168"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okj-fg-yuz">
-                                                    <rect key="frame" x="240" y="184" width="672" height="48"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="Okj-fg-yuz" secondAttribute="trailing" id="2He-Fe-3Bf"/>
-                                                <constraint firstItem="Okj-fg-yuz" firstAttribute="top" secondItem="CDp-uF-meO" secondAttribute="bottom" constant="8" id="7A0-1G-bBg"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="Okj-fg-yuz" secondAttribute="bottom" id="8hp-el-vFj"/>
-                                                <constraint firstItem="I75-r5-7eV" firstAttribute="leading" secondItem="f7v-81-KeL" secondAttribute="leadingMargin" id="IWT-nq-ssS"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="I75-r5-7eV" secondAttribute="bottom" id="PFc-su-cI2"/>
-                                                <constraint firstItem="CDp-uF-meO" firstAttribute="leading" secondItem="I75-r5-7eV" secondAttribute="trailing" constant="8" id="RXk-ek-KcA"/>
-                                                <constraint firstItem="Okj-fg-yuz" firstAttribute="leading" secondItem="I75-r5-7eV" secondAttribute="trailing" constant="8" id="YyY-No-qKA"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="CDp-uF-meO" secondAttribute="trailing" id="dmm-Cb-Ohs"/>
-                                                <constraint firstAttribute="topMargin" secondItem="CDp-uF-meO" secondAttribute="top" id="eB7-YI-MY9"/>
-                                                <constraint firstItem="I75-r5-7eV" firstAttribute="top" secondItem="f7v-81-KeL" secondAttribute="topMargin" id="mdn-LO-IKC"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="tweetProfileImageView" destination="I75-r5-7eV" id="EVa-E1-6Ub"/>
-                                            <outlet property="tweetScreenNameLabel" destination="CDp-uF-meO" id="CQ5-MC-bRN"/>
-                                            <outlet property="tweetTextLabel" destination="Okj-fg-yuz" id="Pe0-4s-5Kf"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

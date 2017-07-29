@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F51FC24F1F2CCB8900E6D00D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */; };
 		F51FC2511F2CCB8900E6D00D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */; };
-		F51FC2531F2CCB8900E6D00D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51FC2521F2CCB8900E6D00D /* SecondViewController.swift */; };
 		F51FC2561F2CCB8900E6D00D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FC2541F2CCB8900E6D00D /* Main.storyboard */; };
 		F51FC2581F2CCB8900E6D00D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51FC2571F2CCB8900E6D00D /* Assets.xcassets */; };
 		F51FC25B1F2CCB8900E6D00D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51FC2591F2CCB8900E6D00D /* LaunchScreen.storyboard */; };
@@ -46,6 +45,18 @@
 		F5864E521D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5864E511D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift */; };
 		F5864E541D58BAB100D7F6D7 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5864E531D58BAB100D7F6D7 /* HomeCollectionViewCell.swift */; };
 		F5A63E8D1D5AADE9000CF719 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A63E8C1D5AADE9000CF719 /* CloudKit.framework */; };
+		F5A9E2F31F2D083100D310B5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A9E2F21F2D083100D310B5 /* CloudKit.framework */; };
+		F5A9E2F91F2D0A6E00D310B5 /* iCloudUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */; };
+		F5A9E2FC1F2D0AD100D310B5 /* CloudKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */; };
+		F5A9E2FD1F2D0E3D00D310B5 /* iCloudUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */; };
+		F5A9E2FE1F2D0E3E00D310B5 /* iCloudUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */; };
+		F5A9E2FF1F2D0E3E00D310B5 /* iCloudUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */; };
+		F5A9E3001F2D0E4100D310B5 /* CloudKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */; };
+		F5A9E3011F2D0E4200D310B5 /* CloudKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */; };
+		F5A9E3021F2D0E4200D310B5 /* CloudKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */; };
+		F5EE9F621F2D13F700244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
+		F5EE9F631F2D13F700244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
+		F5EE9F641F2D13F900244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +80,6 @@
 		F51FC24C1F2CCB8900E6D00D /* iDev2017iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iDev2017iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		F51FC2521F2CCB8900E6D00D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		F51FC2551F2CCB8900E6D00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51FC2571F2CCB8900E6D00D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F51FC25A1F2CCB8900E6D00D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -99,6 +109,10 @@
 		F5864E531D58BAB100D7F6D7 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5A63E8B1D5AA81A000CF719 /* iDev2017tvOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDev2017tvOS.entitlements; sourceTree = "<group>"; };
 		F5A63E8C1D5AADE9000CF719 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F5A9E2F01F2D082400D310B5 /* iDev2017iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDev2017iOS.entitlements; sourceTree = "<group>"; };
+		F5A9E2F21F2D083100D310B5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudUtils.swift; sourceTree = "<group>"; };
+		F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A9E2F31F2D083100D310B5 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +152,7 @@
 		F51FC24D1F2CCB8900E6D00D /* iDev2017iOS */ = {
 			isa = PBXGroup;
 			children = (
+				F5A9E2F01F2D082400D310B5 /* iDev2017iOS.entitlements */,
 				F51FC2AB1F2CDB3600E6D00D /* View Controllers */,
 				F51FC2AA1F2CDB2700E6D00D /* xibs */,
 				F51FC24E1F2CCB8900E6D00D /* AppDelegate.swift */,
@@ -169,6 +185,8 @@
 		F51FC2831F2CD17D00E6D00D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F5EE9F611F2D13D400244F74 /* View Controllers */,
+				F5A9E2FA1F2D0A7500D310B5 /* Utils */,
 				F54387FE1D540E7300103552 /* Twitter */,
 			);
 			path = Shared;
@@ -194,7 +212,6 @@
 			isa = PBXGroup;
 			children = (
 				F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */,
-				F51FC2521F2CCB8900E6D00D /* SecondViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -206,7 +223,6 @@
 				F5864E531D58BAB100D7F6D7 /* HomeCollectionViewCell.swift */,
 				F52E33F31D4E9C8B0010F64B /* DashboardViewController.swift */,
 				F5864E511D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift */,
-				F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -233,6 +249,7 @@
 				F51FC26F1F2CCB8A00E6D00D /* iDev2017iOSUITests */,
 				F5618A5B1D2491D000531988 /* Products */,
 				F5A63E8C1D5AADE9000CF719 /* CloudKit.framework */,
+				F5A9E2F11F2D083100D310B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +276,31 @@
 				F5618A661D2491D000531988 /* Info.plist */,
 			);
 			path = iDev2017tvOS;
+			sourceTree = "<group>";
+		};
+		F5A9E2F11F2D083100D310B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5A9E2F21F2D083100D310B5 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5A9E2FA1F2D0A7500D310B5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */,
+				F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F5EE9F611F2D13D400244F74 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +391,12 @@
 						DevelopmentTeam = GBDZQKUR6E;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
 								enabled = 1;
 							};
 						};
@@ -443,11 +491,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F51FC2531F2CCB8900E6D00D /* SecondViewController.swift in Sources */,
 				F51FC2841F2CD18C00E6D00D /* TwitterInterface.swift in Sources */,
+				F5EE9F621F2D13F700244F74 /* SettingsViewController.swift in Sources */,
+				F5A9E2FD1F2D0E3D00D310B5 /* iCloudUtils.swift in Sources */,
 				F51FC24F1F2CCB8900E6D00D /* AppDelegate.swift in Sources */,
 				F51FC2891F2CD19700E6D00D /* Tweet.swift in Sources */,
 				F51FC28A1F2CD19700E6D00D /* User.swift in Sources */,
+				F5A9E3001F2D0E4100D310B5 /* CloudKitUtils.swift in Sources */,
 				F51FC2511F2CCB8900E6D00D /* HomeViewController.swift in Sources */,
 				F51FC2881F2CD19700E6D00D /* MediaItem.swift in Sources */,
 				F51FC2A31F2CD93600E6D00D /* TweetTableViewCell.swift in Sources */,
@@ -460,10 +510,13 @@
 			files = (
 				F51FC2661F2CCB8900E6D00D /* iDev2017iOSTests.swift in Sources */,
 				F51FC28D1F2CD19800E6D00D /* Tweet.swift in Sources */,
+				F5A9E2FE1F2D0E3E00D310B5 /* iCloudUtils.swift in Sources */,
 				F51FC28E1F2CD19800E6D00D /* User.swift in Sources */,
 				F51FC28C1F2CD19800E6D00D /* MediaItem.swift in Sources */,
 				F51FC2851F2CD19200E6D00D /* TwitterInterface.swift in Sources */,
+				F5A9E3011F2D0E4200D310B5 /* CloudKitUtils.swift in Sources */,
 				F51FC2A41F2CD93700E6D00D /* TweetTableViewCell.swift in Sources */,
+				F5EE9F631F2D13F700244F74 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,10 +526,13 @@
 			files = (
 				F51FC2711F2CCB8A00E6D00D /* iDev2017iOSUITests.swift in Sources */,
 				F51FC2911F2CD19800E6D00D /* Tweet.swift in Sources */,
+				F5A9E2FF1F2D0E3E00D310B5 /* iCloudUtils.swift in Sources */,
 				F51FC2921F2CD19800E6D00D /* User.swift in Sources */,
 				F51FC2901F2CD19800E6D00D /* MediaItem.swift in Sources */,
 				F51FC2861F2CD19300E6D00D /* TwitterInterface.swift in Sources */,
+				F5A9E3021F2D0E4200D310B5 /* CloudKitUtils.swift in Sources */,
 				F51FC2A51F2CD93800E6D00D /* TweetTableViewCell.swift in Sources */,
+				F5EE9F641F2D13F900244F74 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,7 +544,9 @@
 				F52E33F41D4E9C8B0010F64B /* DashboardViewController.swift in Sources */,
 				F54388031D540E7300103552 /* MediaItem.swift in Sources */,
 				F54388061D540E7300103552 /* User.swift in Sources */,
+				F5A9E2FC1F2D0AD100D310B5 /* CloudKitUtils.swift in Sources */,
 				F5864E521D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift in Sources */,
+				F5A9E2F91F2D0A6E00D310B5 /* iCloudUtils.swift in Sources */,
 				F5864E541D58BAB100D7F6D7 /* HomeCollectionViewCell.swift in Sources */,
 				F54388041D540E7300103552 /* Tweet.swift in Sources */,
 				F5618A5E1D2491D000531988 /* AppDelegate.swift in Sources */,
@@ -549,6 +607,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = iDev2017iOS/iDev2017iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -572,6 +631,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = iDev2017iOS/iDev2017iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				GCC_C_LANGUAGE_STANDARD = gnu11;

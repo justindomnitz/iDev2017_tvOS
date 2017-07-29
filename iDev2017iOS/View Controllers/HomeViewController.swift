@@ -18,6 +18,13 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        if let value = UserDefaults.standard.value(forKey: "hashtag") as? String {
+            hashtag = value
+        } else {
+            UserDefaults.standard.setValue(hashtag, forKey: "hashtag")
+            UserDefaults.standard.synchronize()
+        }
+        
         tableView.delegate = self
         tableView.dataSource = self
         

@@ -16,6 +16,17 @@ class SettingsViewController: UIViewController, UITabBarControllerDelegate {
         super.viewDidLoad()
         
         tabBarController?.delegate = self
+        
+        if let hashtagValue = UserDefaults.standard.value(forKey: "hashtag") as? String {
+            hashtag.text = hashtagValue
+        }
+    }
+    
+    @IBAction func hashtagEditingDidEnd(_ sender: UITextField) {
+        
+        UserDefaults.standard.setValue(sender.text, forKey: "hashtag")
+        UserDefaults.standard.synchronize()
+        
     }
 
     // MARK - UITabBarControllerDelegate
@@ -23,10 +34,7 @@ class SettingsViewController: UIViewController, UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
         for vc in tabBarController.viewControllers! {
             if let hvc = vc as? HomeViewController {
-                let hashtagValue = hashtag?.text ?? ""
-                hvc.hashtag = hashtagValue
-                UserDefaults.standard.setValue(hashtagValue, forKey: "hashtag")
-                UserDefaults.standard.synchronize()
+                hvc.hashtag = hashtag?.text ?? ""
             }
         }
     }

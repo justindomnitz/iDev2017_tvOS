@@ -18,31 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var sharedDBChangeToken: CKServerChangeToken?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        cloudKitSetup(application)
-        return true
-    }
-    
-    //MARK: CloudKit
-    
-    private func cloudKitSetup(_ application: UIApplication) {
-        if subscriptionIsLocallyCached { return }
-        
-        let subscription = CKDatabaseSubscription(subscriptionID: "shared-changes")
-        
-        let notificationInfo = CKNotificationInfo()
-        notificationInfo.shouldSendContentAvailable = true
-        subscription.notificationInfo = notificationInfo
-        
-        application.registerForRemoteNotifications()
-        
-        let operation = CKModifySubscriptionsOperation(subscriptionsToSave: [subscription], subscriptionIDsToDelete: [])
-        operation.modifySubscriptionsCompletionBlock = { subscription, messages, error in
-            if error != nil { } // Handle the error
-            else { self.subscriptionIsLocallyCached = true }
+        CloudKitUtils.cloudKitSetup(application, subscriptionIsLocallyCached: subscriptionIsLocallyCached) { cachedResult in
+            self.subscriptionIsLocallyCached = cachedResult
         }
-        
-        operation.qualityOfService = .utility
-        //self.shareDB.add(operation) //to do
+        iCloudUtils.iCloudSetup()
+        return true
     }
     
     func application(_ application: UIApplication,
@@ -53,29 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let notification = CKNotification(fromRemoteNotificationDictionary: dict)
         
         if (notification.subscriptionID == "shared-changes") {
-            fetchSharedChanges {
+            CloudKitUtils.fetchSharedChanges(sharedDBChangeToken: sharedDBChangeToken) { resultToken in
+                self.sharedDBChangeToken = resultToken
                 completionHandler(UIBackgroundFetchResult.newData)
             }
         }
-    }
-    
-    func fetchSharedChanges(_ callback: @escaping () -> Void) {
-        let changesOperation = CKFetchDatabaseChangesOperation(previousServerChangeToken: sharedDBChangeToken) //previously cached
-        
-        changesOperation.fetchAllChanges = true
-        changesOperation.recordZoneWithIDChangedBlock = { zoneId in /* to do */ } // collect zone IDs.
-        changesOperation.recordZoneWithIDWasDeletedBlock = { zoneId in /* to do */ } //delete local cache
-        changesOperation.changeTokenUpdatedBlock = { zoneId in /* to do */ } //delete local cache
-        
-        changesOperation.fetchDatabaseChangesCompletionBlock = {
-            (newToken, more, error) in
-            //error handling here
-            self.sharedDBChangeToken = newToken!
-            self.fetchSharedChanges {
-                //to do - callback //using CKFetchRecordZoneChangesOperation
-            }
-        }
-        //self.shareDB.add(changesOperation) to do
     }
 
 }

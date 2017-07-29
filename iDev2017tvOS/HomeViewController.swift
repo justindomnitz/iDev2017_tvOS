@@ -21,6 +21,9 @@ class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         
         if let value = UserDefaults.standard.value(forKey: "hashtag") as? String {
             hashtag = value
+        } else {
+            UserDefaults.standard.setValue(hashtag, forKey: "hashtag")
+            UserDefaults.standard.synchronize()
         }
         
         //Table View

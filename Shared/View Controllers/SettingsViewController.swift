@@ -26,8 +26,13 @@ class SettingsViewController: UIViewController, UITabBarControllerDelegate {
         
         UserDefaults.standard.setValue(sender.text, forKey: "hashtag")
         UserDefaults.standard.synchronize()
-        
+        NSUbiquitousKeyValueStore.default.set(sender.text, forKey: "hashtag")
     }
+    
+    @IBAction func saveChanges(_ sender: UIButton) {
+        hashtag.resignFirstResponder()
+    }
+    
 
     // MARK - UITabBarControllerDelegate
     

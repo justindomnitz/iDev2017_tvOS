@@ -44,8 +44,6 @@
 		F5618A651D2491D000531988 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5618A641D2491D000531988 /* Assets.xcassets */; };
 		F5864E521D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5864E511D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift */; };
 		F5864E541D58BAB100D7F6D7 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5864E531D58BAB100D7F6D7 /* HomeCollectionViewCell.swift */; };
-		F5A63E8D1D5AADE9000CF719 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A63E8C1D5AADE9000CF719 /* CloudKit.framework */; };
-		F5A9E2F31F2D083100D310B5 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A9E2F21F2D083100D310B5 /* CloudKit.framework */; };
 		F5A9E2F91F2D0A6E00D310B5 /* iCloudUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */; };
 		F5A9E2FC1F2D0AD100D310B5 /* CloudKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */; };
 		F5A9E2FD1F2D0E3D00D310B5 /* iCloudUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */; };
@@ -57,6 +55,8 @@
 		F5EE9F621F2D13F700244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
 		F5EE9F631F2D13F700244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
 		F5EE9F641F2D13F900244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
+		F5EE9F6A1F2D2F5500244F74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE9F691F2D2F5500244F74 /* CloudKit.framework */; };
+		F5EE9F6C1F2D2F5700244F74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,11 +108,11 @@
 		F5864E511D58BA9500D7F6D7 /* DashboardCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5864E531D58BAB100D7F6D7 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F5A63E8B1D5AA81A000CF719 /* iDev2017tvOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDev2017tvOS.entitlements; sourceTree = "<group>"; };
-		F5A63E8C1D5AADE9000CF719 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F5A9E2F01F2D082400D310B5 /* iDev2017iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iDev2017iOS.entitlements; sourceTree = "<group>"; };
-		F5A9E2F21F2D083100D310B5 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		F5A9E2F81F2D0A6E00D310B5 /* iCloudUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCloudUtils.swift; sourceTree = "<group>"; };
 		F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtils.swift; sourceTree = "<group>"; };
+		F5EE9F691F2D2F5500244F74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A9E2F31F2D083100D310B5 /* CloudKit.framework in Frameworks */,
+				F5EE9F6A1F2D2F5500244F74 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5A63E8D1D5AADE9000CF719 /* CloudKit.framework in Frameworks */,
+				F5EE9F6C1F2D2F5700244F74 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +248,6 @@
 				F51FC2641F2CCB8900E6D00D /* iDev2017iOSTests */,
 				F51FC26F1F2CCB8A00E6D00D /* iDev2017iOSUITests */,
 				F5618A5B1D2491D000531988 /* Products */,
-				F5A63E8C1D5AADE9000CF719 /* CloudKit.framework */,
 				F5A9E2F11F2D083100D310B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -281,7 +280,8 @@
 		F5A9E2F11F2D083100D310B5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F5A9E2F21F2D083100D310B5 /* CloudKit.framework */,
+				F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */,
+				F5EE9F691F2D2F5500244F74 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -389,6 +389,7 @@
 					F51FC24B1F2CCB8900E6D00D = {
 						CreatedOnToolsVersion = 9.0;
 						DevelopmentTeam = GBDZQKUR6E;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -418,6 +419,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes.appletvos = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 							com.apple.iCloud = {
@@ -609,13 +613,16 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = iDev2017iOS/iDev2017iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iDev2017iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_VERSION = 4.0;
@@ -633,13 +640,16 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = iDev2017iOS/iDev2017iOS.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = iDev2017iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017iOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -853,7 +863,7 @@
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				INFOPLIST_FILE = iDev2017tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017tvOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -873,7 +883,7 @@
 				DEVELOPMENT_TEAM = GBDZQKUR6E;
 				INFOPLIST_FILE = iDev2017tvOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017tvOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lowyoyo.iDev2017.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";

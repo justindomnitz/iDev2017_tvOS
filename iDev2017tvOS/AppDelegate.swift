@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CloudKitUtils.cloudKitSetup(application, subscriptionIsLocallyCached: subscriptionIsLocallyCached) { cachedResult in
             self.subscriptionIsLocallyCached = cachedResult
         }
-        iCloudUtils.iCloudSetup()
+        iCloudSetup()
         return true
     }
     
@@ -37,6 +37,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.sharedDBChangeToken = resultToken
                 completionHandler(UIBackgroundFetchResult.newData)
             }
+        }
+    }
+    
+    func iCloudSetup() {
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(storeDidChange),
+                                               name: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
+                                               object: NSUbiquitousKeyValueStore.default)
+        NSUbiquitousKeyValueStore.default.synchronize()
+    }
+    
+    @objc private func storeDidChange() {
+        if let hashtag = NSUbiquitousKeyValueStore.default.string(forKey: "hashtag") {
+            UserDefaults.standard.setValue(hashtag, forKey: "hashtag")
+            UserDefaults.standard.synchronize()
         }
     }
 

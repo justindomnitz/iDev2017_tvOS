@@ -64,11 +64,20 @@
                                     <action selector="hashtagEditingDidEnd:" destination="8rJ-Kc-sve" eventType="editingDidEnd" id="27o-kK-zqQ"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RaX-B4-0xg">
+                                <rect key="frame" x="138" y="87" width="98" height="30"/>
+                                <state key="normal" title="Save Changes"/>
+                                <connections>
+                                    <action selector="saveChanges:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Jqb-4g-ACe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="RaX-B4-0xg" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="1GL-eq-m0f"/>
                             <constraint firstItem="O1u-W8-tvY" firstAttribute="trailing" secondItem="TrO-zs-TJV" secondAttribute="trailing" constant="20" id="Ajg-VG-hrC"/>
                             <constraint firstItem="TrO-zs-TJV" firstAttribute="top" secondItem="RIa-P1-FTk" secondAttribute="bottom" constant="8" symbolic="YES" id="CCJ-L4-OLe"/>
+                            <constraint firstItem="RaX-B4-0xg" firstAttribute="top" secondItem="TrO-zs-TJV" secondAttribute="bottom" constant="8" id="Ov9-Ip-AoR"/>
                             <constraint firstItem="RIa-P1-FTk" firstAttribute="centerX" secondItem="O1u-W8-tvY" secondAttribute="centerX" id="nVL-vH-L2p"/>
                             <constraint firstItem="TrO-zs-TJV" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="20" id="nlF-X0-cHL"/>
                             <constraint firstItem="RIa-P1-FTk" firstAttribute="top" secondItem="O1u-W8-tvY" secondAttribute="top" id="uQY-rw-iAs"/>

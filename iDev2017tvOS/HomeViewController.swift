@@ -8,9 +8,8 @@
 
 import UIKit
 
-class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource, UITableViewDelegate, UITableViewDataSource {
+class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var twitterTableView: UITableView!
     
     var tweets = [[Tweet]]()
@@ -31,10 +30,6 @@ class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         twitterTableView.dataSource = self
         
         twitterTableView.register(UINib(nibName: "TweetTableViewCell", bundle: nil), forCellReuseIdentifier: "tweetTableViewCell")
-        
-        //Collection View
-        collectionView.delegate = self
-        collectionView.dataSource = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -80,48 +75,5 @@ class HomeViewController: UIViewController, UICollectionViewDelegateFlowLayout, 
         return UITableViewCell()
     }
     
-    // MARK: - UICollectionViewDataSource
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
-    {
-        return 20
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "homeCollectionCell", for: indexPath) as? HomeCollectionViewCell {
-            
-            cell.backgroundColor = UIColor.brown
-            cell.number.text = "\(indexPath.row)"
-            
-            return cell
-        }
-    
-        return UICollectionViewCell()
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-    }
-    
-    // MARK: - UIFocusEnvironment
-    
-    override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
-        super.didUpdateFocus(in: context, with: coordinator)
-        
-        if let previousItem = context.previouslyFocusedView as? HomeCollectionViewCell {
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
-                previousItem.backgroundColor = UIColor.brown
-            })
-        }
-        if let nextItem = context.nextFocusedView as? HomeCollectionViewCell {
-            UIView.animate(withDuration: 0.5, animations: { () -> Void in
-                nextItem.backgroundColor = UIColor(red: 51 / 100, green: 67 / 100, blue: 49 / 100, alpha: 0.8)
-            })
-        }
-    }
 }
 

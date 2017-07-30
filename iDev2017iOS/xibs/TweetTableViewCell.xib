@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -19,38 +20,34 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fgH-1B-KQx">
-                        <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                        <rect key="frame" x="20" y="32" width="48" height="48"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="112" id="6Gk-LW-7IF"/>
-                            <constraint firstAttribute="width" constant="112" id="b1C-5Q-2rt"/>
+                            <constraint firstAttribute="height" constant="48" id="6Gk-LW-7IF"/>
+                            <constraint firstAttribute="width" constant="48" id="b1C-5Q-2rt"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PLf-aM-5ja">
-                        <rect key="frame" x="120" y="0.0" width="294" height="24"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="24" id="69c-bN-hR4"/>
-                        </constraints>
+                        <rect key="frame" x="76" y="20" width="318" height="24"/>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3u-UC-0M9">
-                        <rect key="frame" x="120" y="24" width="294" height="87.5"/>
+                        <rect key="frame" x="76" y="44" width="318" height="47.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="fgH-1B-KQx" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" id="45d-fh-qk3"/>
-                    <constraint firstAttribute="bottom" secondItem="f3u-UC-0M9" secondAttribute="bottom" id="4R5-Sf-JFX"/>
-                    <constraint firstItem="f3u-UC-0M9" firstAttribute="leading" secondItem="fgH-1B-KQx" secondAttribute="trailing" constant="8" id="6LG-n1-Ht7"/>
-                    <constraint firstItem="PLf-aM-5ja" firstAttribute="leading" secondItem="fgH-1B-KQx" secondAttribute="trailing" constant="8" id="AHf-y6-wRj"/>
-                    <constraint firstItem="fgH-1B-KQx" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" id="XB5-F9-9U3"/>
-                    <constraint firstAttribute="trailing" secondItem="f3u-UC-0M9" secondAttribute="trailing" id="a8o-DY-S64"/>
-                    <constraint firstItem="PLf-aM-5ja" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" id="lY2-pG-WDA"/>
-                    <constraint firstAttribute="trailing" secondItem="PLf-aM-5ja" secondAttribute="trailing" id="sHv-M6-CY7"/>
-                    <constraint firstAttribute="bottom" secondItem="fgH-1B-KQx" secondAttribute="bottom" id="wQY-PE-gzw"/>
+                    <constraint firstAttribute="bottom" secondItem="f3u-UC-0M9" secondAttribute="bottom" constant="20" symbolic="YES" id="4R5-Sf-JFX"/>
+                    <constraint firstItem="f3u-UC-0M9" firstAttribute="leading" secondItem="fgH-1B-KQx" secondAttribute="trailing" constant="8" symbolic="YES" id="6LG-n1-Ht7"/>
+                    <constraint firstItem="PLf-aM-5ja" firstAttribute="leading" secondItem="fgH-1B-KQx" secondAttribute="trailing" constant="8" symbolic="YES" id="AHf-y6-wRj"/>
+                    <constraint firstItem="fgH-1B-KQx" firstAttribute="leading" secondItem="S0Q-fX-qc8" secondAttribute="leading" constant="20" symbolic="YES" id="XB5-F9-9U3"/>
+                    <constraint firstItem="fgH-1B-KQx" firstAttribute="centerY" secondItem="S0Q-fX-qc8" secondAttribute="centerY" id="Y6g-g3-36E"/>
+                    <constraint firstAttribute="trailing" secondItem="f3u-UC-0M9" secondAttribute="trailing" constant="20" symbolic="YES" id="a8o-DY-S64"/>
+                    <constraint firstItem="PLf-aM-5ja" firstAttribute="top" secondItem="S0Q-fX-qc8" secondAttribute="top" constant="20" symbolic="YES" id="lY2-pG-WDA"/>
+                    <constraint firstAttribute="trailing" secondItem="PLf-aM-5ja" secondAttribute="trailing" constant="20" symbolic="YES" id="sHv-M6-CY7"/>
                     <constraint firstItem="f3u-UC-0M9" firstAttribute="top" secondItem="PLf-aM-5ja" secondAttribute="bottom" id="yKs-YT-Xev"/>
                 </constraints>
             </tableViewCellContentView>

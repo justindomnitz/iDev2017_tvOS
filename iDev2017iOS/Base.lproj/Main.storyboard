@@ -96,14 +96,38 @@
         <!--Profile-->
         <scene sceneID="PSM-t2-rA3">
             <objects>
-                <viewController title="Profile" id="Rh1-DQ-bja" sceneMemberID="viewController">
+                <viewController title="Profile" id="Rh1-DQ-bja" customClass="ProfileViewController" customModule="iDev2017iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" id="dQo-q3-UE4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpD-OE-BVy">
+                                <rect key="frame" x="151.5" y="20" width="71" height="30"/>
+                                <state key="normal" title="Edit Photo"/>
+                                <connections>
+                                    <action selector="editPhoto:" destination="Rh1-DQ-bja" eventType="touchUpInside" id="o7l-nG-vB3"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sxE-l6-qgj">
+                                <rect key="frame" x="20" y="58" width="335" height="560"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bkP-fR-0Nw" firstAttribute="trailing" secondItem="sxE-l6-qgj" secondAttribute="trailing" constant="20" id="7C0-18-GoY"/>
+                            <constraint firstItem="sxE-l6-qgj" firstAttribute="top" secondItem="vpD-OE-BVy" secondAttribute="bottom" constant="8" symbolic="YES" id="DzH-Mq-SNp"/>
+                            <constraint firstItem="vpD-OE-BVy" firstAttribute="centerX" secondItem="bkP-fR-0Nw" secondAttribute="centerX" id="WLr-1d-IJl"/>
+                            <constraint firstItem="sxE-l6-qgj" firstAttribute="leading" secondItem="bkP-fR-0Nw" secondAttribute="leading" constant="20" id="rzQ-yU-ylo"/>
+                            <constraint firstItem="bkP-fR-0Nw" firstAttribute="bottom" secondItem="sxE-l6-qgj" secondAttribute="bottom" id="rzx-VW-uD6"/>
+                            <constraint firstItem="vpD-OE-BVy" firstAttribute="top" secondItem="bkP-fR-0Nw" secondAttribute="top" id="xZU-MX-ZR1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bkP-fR-0Nw"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="ic_account_circle_black_24dp" selectedImage="ic_account_circle_black_24dp" id="imF-lj-iGV"/>
+                    <connections>
+                        <outlet property="editButton" destination="vpD-OE-BVy" id="rug-dd-cvt"/>
+                        <outlet property="imageView" destination="sxE-l6-qgj" id="unR-l7-oxP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c5h-Gv-wjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

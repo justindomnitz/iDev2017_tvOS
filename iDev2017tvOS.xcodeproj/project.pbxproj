@@ -55,6 +55,7 @@
 		F5EE9F641F2D13F900244F74 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
 		F5EE9F6A1F2D2F5500244F74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE9F691F2D2F5500244F74 /* CloudKit.framework */; };
 		F5EE9F6C1F2D2F5700244F74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */; };
+		F5EE9F721F2E4E4000244F74 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9F711F2E4E4000244F74 /* ProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		F5A9E2FB1F2D0AD100D310B5 /* CloudKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudKitUtils.swift; sourceTree = "<group>"; };
 		F5EE9F691F2D2F5500244F74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		F5EE9F711F2E4E4000244F74 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				F51FC2501F2CCB8900E6D00D /* HomeViewController.swift */,
+				F5EE9F711F2E4E4000244F74 /* ProfileViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				F51FC24F1F2CCB8900E6D00D /* AppDelegate.swift in Sources */,
 				F51FC2891F2CD19700E6D00D /* Tweet.swift in Sources */,
 				F51FC28A1F2CD19700E6D00D /* User.swift in Sources */,
+				F5EE9F721F2E4E4000244F74 /* ProfileViewController.swift in Sources */,
 				F5A9E3001F2D0E4100D310B5 /* CloudKitUtils.swift in Sources */,
 				F51FC2511F2CCB8900E6D00D /* HomeViewController.swift in Sources */,
 				F51FC2881F2CD19700E6D00D /* MediaItem.swift in Sources */,

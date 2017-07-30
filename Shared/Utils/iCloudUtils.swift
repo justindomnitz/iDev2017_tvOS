@@ -12,6 +12,6 @@ class iCloudUtils {
 
     //MARK: iCloud Key-Value Store
     
-    //to do
+    //to do - consolidate KVS code accross iOS / tvOS here
     
 }

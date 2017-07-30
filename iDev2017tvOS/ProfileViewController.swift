@@ -26,6 +26,21 @@ class ProfileViewController: UIViewController {
         imageView.clipsToBounds = false
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //Clear the profile image.
+        self.imageView.image = nil
+        
+        CloudKitUtils.fetchProfilePhoto() { photo, error in
+            
+            //to do  - error handling
+            
+            //Set the profile image we recieved from CloudKit.
+            self.imageView.image = photo
+        }
+    }
+    
     // MARK: - UIFocusEnvironment
     
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {

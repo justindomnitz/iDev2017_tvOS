@@ -34,6 +34,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //Clear Twitter data.
+        tweets.removeAll()
+        tableView.reloadData()
+        
         getTwitterData()
     }
 

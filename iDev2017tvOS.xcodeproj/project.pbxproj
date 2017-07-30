@@ -56,6 +56,10 @@
 		F5EE9F6A1F2D2F5500244F74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE9F691F2D2F5500244F74 /* CloudKit.framework */; };
 		F5EE9F6C1F2D2F5700244F74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */; };
 		F5EE9F721F2E4E4000244F74 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9F711F2E4E4000244F74 /* ProfileViewController.swift */; };
+		F5EE9F761F2E5AF600244F74 /* CKAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9F741F2E5AC200244F74 /* CKAsset.swift */; };
+		F5EE9F781F2E5AF700244F74 /* CKAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9F741F2E5AC200244F74 /* CKAsset.swift */; };
+		F5EE9F7A1F2E5AF700244F74 /* CKAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9F741F2E5AC200244F74 /* CKAsset.swift */; };
+		F5EE9F7C1F2E5AF800244F74 /* CKAsset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5EE9F741F2E5AC200244F74 /* CKAsset.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +115,7 @@
 		F5EE9F691F2D2F5500244F74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
 		F5EE9F6B1F2D2F5700244F74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		F5EE9F711F2E4E4000244F74 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F5EE9F741F2E5AC200244F74 /* CKAsset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKAsset.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +188,7 @@
 		F51FC2831F2CD17D00E6D00D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				F5EE9F731F2E5A9100244F74 /* Model */,
 				F5EE9F611F2D13D400244F74 /* View Controllers */,
 				F5A9E2FA1F2D0A7500D310B5 /* Utils */,
 				F54387FE1D540E7300103552 /* Twitter */,
@@ -298,6 +304,14 @@
 				F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		F5EE9F731F2E5A9100244F74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F5EE9F741F2E5AC200244F74 /* CKAsset.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -495,6 +509,7 @@
 				F51FC2841F2CD18C00E6D00D /* TwitterInterface.swift in Sources */,
 				F5EE9F621F2D13F700244F74 /* SettingsViewController.swift in Sources */,
 				F5A9E2FD1F2D0E3D00D310B5 /* iCloudUtils.swift in Sources */,
+				F5EE9F781F2E5AF700244F74 /* CKAsset.swift in Sources */,
 				F51FC24F1F2CCB8900E6D00D /* AppDelegate.swift in Sources */,
 				F51FC2891F2CD19700E6D00D /* Tweet.swift in Sources */,
 				F51FC28A1F2CD19700E6D00D /* User.swift in Sources */,
@@ -515,6 +530,7 @@
 				F5A9E2FE1F2D0E3E00D310B5 /* iCloudUtils.swift in Sources */,
 				F51FC28E1F2CD19800E6D00D /* User.swift in Sources */,
 				F51FC28C1F2CD19800E6D00D /* MediaItem.swift in Sources */,
+				F5EE9F7A1F2E5AF700244F74 /* CKAsset.swift in Sources */,
 				F51FC2851F2CD19200E6D00D /* TwitterInterface.swift in Sources */,
 				F5A9E3011F2D0E4200D310B5 /* CloudKitUtils.swift in Sources */,
 				F51FC2A41F2CD93700E6D00D /* TweetTableViewCell.swift in Sources */,
@@ -531,6 +547,7 @@
 				F5A9E2FF1F2D0E3E00D310B5 /* iCloudUtils.swift in Sources */,
 				F51FC2921F2CD19800E6D00D /* User.swift in Sources */,
 				F51FC2901F2CD19800E6D00D /* MediaItem.swift in Sources */,
+				F5EE9F7C1F2E5AF800244F74 /* CKAsset.swift in Sources */,
 				F51FC2861F2CD19300E6D00D /* TwitterInterface.swift in Sources */,
 				F5A9E3021F2D0E4200D310B5 /* CloudKitUtils.swift in Sources */,
 				F51FC2A51F2CD93800E6D00D /* TweetTableViewCell.swift in Sources */,
@@ -545,6 +562,7 @@
 				F5618A601D2491D000531988 /* HomeViewController.swift in Sources */,
 				F52E33F41D4E9C8B0010F64B /* ProfileViewController.swift in Sources */,
 				F54388031D540E7300103552 /* MediaItem.swift in Sources */,
+				F5EE9F761F2E5AF600244F74 /* CKAsset.swift in Sources */,
 				F54388061D540E7300103552 /* User.swift in Sources */,
 				F5A9E2FC1F2D0AD100D310B5 /* CloudKitUtils.swift in Sources */,
 				F5A9E2F91F2D0A6E00D310B5 /* iCloudUtils.swift in Sources */,

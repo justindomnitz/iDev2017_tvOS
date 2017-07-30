@@ -8,13 +8,27 @@
 
 import UIKit
 import Photos
-//import AVFoundation
 import MobileCoreServices
 
 class ProfileViewController: UIViewController, UINavigationControllerDelegate {
     
     @IBOutlet weak var editButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        //Clear the profile image.
+        self.imageView.image = nil
+        
+        CloudKitUtils.fetchProfilePhoto() { photo, error in
+            
+            //to do  - error handling
+            
+            //Set the profile image we recieved from CloudKit.
+            self.imageView.image = photo
+        }
+    }
     
     @IBAction func editPhoto(_ sender: Any) {
         let _ = startMediaBrowserFromViewController(controller: self, delegate: self, addEditOptionsFlag: true)

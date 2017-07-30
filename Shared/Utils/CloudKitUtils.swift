@@ -11,7 +11,30 @@ import CloudKit
 
 class CloudKitUtils {
 
+    static let ProfileType = "Profile"
+    
     //MARK: CloudKit
+    
+    static func fetchProfilePhoto(completion: @escaping (_ photo: UIImage?, _ error: NSError?) -> ()) {
+        
+        let container = CKContainer.default()
+        //let publicDB = container.publicCloudDatabase
+        let privateDB = container.privateCloudDatabase
+        
+        //Get all records.
+        let predicate = NSPredicate(format: "TRUEPREDICATE")
+        
+        let query = CKQuery(recordType: ProfileType,
+                            predicate: predicate)
+        
+        privateDB.perform(query, inZoneWith: nil) { results, error in
+            defer {
+                DispatchQueue.main.async {
+                    completion((results?.first?["photo"] as? CKAsset)?.toUIImage(), error as NSError?)
+                }
+            }
+        }
+    }
     
     static func cloudKitSetup(_ application: UIApplication, subscriptionIsLocallyCached: Bool, _ callback: @escaping (Bool) -> Void) {
         if subscriptionIsLocallyCached { callback(true) }

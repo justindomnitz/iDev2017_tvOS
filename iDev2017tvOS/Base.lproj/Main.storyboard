@@ -99,7 +99,7 @@
                             <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ja2-TG-mpi" customClass="FocusableUIView" customModule="iDev2017tvOS" customModuleProvider="target">
                                 <rect key="frame" x="20" y="210" width="1880" height="810"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="episode-24-05-1920" translatesAutoresizingMaskIntoConstraints="NO" id="yq7-wf-TPs" userLabel="Image View">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yq7-wf-TPs" userLabel="Image View">
                                         <rect key="frame" x="0.0" y="0.0" width="1880" height="810"/>
                                     </imageView>
                                 </subviews>
@@ -197,7 +197,4 @@
             <point key="canvasLocation" x="-324" y="2230"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="episode-24-05-1920" width="1920" height="1080"/>
-    </resources>
 </document>

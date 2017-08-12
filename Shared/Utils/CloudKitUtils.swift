@@ -36,6 +36,8 @@ class CloudKitUtils {
         }
     }
     
+    //to do - pushProfilePhoto
+    
     static func cloudKitSetup(_ application: UIApplication, subscriptionIsLocallyCached: Bool, _ callback: @escaping (Bool) -> Void) {
         if subscriptionIsLocallyCached { callback(true) }
         

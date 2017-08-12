@@ -23,10 +23,14 @@ class ProfileViewController: UIViewController, UINavigationControllerDelegate {
         
         CloudKitUtils.fetchProfilePhoto() { photo, error in
             
-            //to do  - error handling
+            if let error = error {
+                //to do  - error handling
+                print(error.debugDescription)
+            } else {
+                //Set the profile image we recieved from CloudKit.
+                self.imageView.image = photo
+            }
             
-            //Set the profile image we recieved from CloudKit.
-            self.imageView.image = photo
         }
     }
     

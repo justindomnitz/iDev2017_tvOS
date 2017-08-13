@@ -44,7 +44,35 @@ class ProfileViewController: UIViewController {
                 self.imageView.image = photo
             }
             
+            /*
+            let checkMark = UIImageView()
+            checkMark.image = UIImage(named: "ic_check_box_grey600_48dp")
+            checkMark.translatesAutoresizingMaskIntoConstraints = false
+            
+            self.imageView.addSubview(checkMark)
+            //self.imageView.overlayContentView.addSubview(checkMark)
+            
+            let horizontalConstraint = NSLayoutConstraint(item: checkMark,
+                                                          attribute: NSLayoutAttribute.centerX,
+                                                          relatedBy: NSLayoutRelation.equal,
+                                                          toItem: self.imageView,
+                                                          attribute: NSLayoutAttribute.centerX,
+                                                          multiplier: 1,
+                                                          constant: 0)
+            let verticalConstraint = NSLayoutConstraint(item: checkMark,
+                                                        attribute: NSLayoutAttribute.centerY,
+                                                        relatedBy: NSLayoutRelation.equal,
+                                                        toItem: self.imageView,
+                                                        attribute: NSLayoutAttribute.centerY,
+                                                        multiplier: 1,
+                                                        constant: 0)
+            
+            self.imageView.addConstraints([horizontalConstraint,
+                                           verticalConstraint])
+            */
+ 
         }
+
     }
     
     // MARK: - UIFocusEnvironment

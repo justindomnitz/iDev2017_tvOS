@@ -11,6 +11,8 @@ import UIKit
 class SettingsViewController: UIViewController, UITabBarControllerDelegate {
 
     @IBOutlet weak var hashtag: UITextField!
+    @IBOutlet weak var systemButton: UIButton!
+    @IBOutlet weak var plainButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +22,13 @@ class SettingsViewController: UIViewController, UITabBarControllerDelegate {
         if let hashtagValue = UserDefaults.standard.value(forKey: "hashtag") as? String {
             hashtag.text = hashtagValue
         }
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //to do
     }
     
     @IBAction func hashtagEditingDidEnd(_ sender: UITextField) {

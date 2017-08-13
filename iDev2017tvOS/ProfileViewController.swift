@@ -37,6 +37,8 @@ class ProfileViewController: UIViewController {
             if let error = error {
                 //to do  - error handling
                 print(error.debugDescription)
+                self.imageView.contentMode = .center
+                self.imageView.image = UIImage(named: "ic_not_interested_black_48dp")
             } else {
                 //Set the profile image we recieved from CloudKit.
                 self.imageView.image = photo

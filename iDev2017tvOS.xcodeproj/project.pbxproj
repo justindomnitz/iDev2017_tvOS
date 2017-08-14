@@ -35,7 +35,7 @@
 		F51FC2AF1F2CDBAB00E6D00D /* TweetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51FC2AD1F2CDBAB00E6D00D /* TweetTableViewCell.xib */; };
 		F52E33F41D4E9C8B0010F64B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F31D4E9C8B0010F64B /* ProfileViewController.swift */; };
 		F52E33F61D4E9CA90010F64B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52E33F51D4E9CA90010F64B /* SettingsViewController.swift */; };
-		F5422D4D1F41E3A800C4D677 /* ShareDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F0C0131F41DE5C005D19CF /* ShareDemo.xib */; };
+		F5422D4F1F41ECB300C4D677 /* ShareDemo.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5F0C0131F41DE5C005D19CF /* ShareDemo.xib */; };
 		F54388031D540E7300103552 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54387FF1D540E7300103552 /* MediaItem.swift */; };
 		F54388041D540E7300103552 /* Tweet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54388001D540E7300103552 /* Tweet.swift */; };
 		F54388061D540E7300103552 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54388021D540E7300103552 /* User.swift */; };
@@ -197,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				F51FC29C1F2CD7AF00E6D00D /* TweetTableViewCell.xib */,
-				F5F0C0131F41DE5C005D19CF /* ShareDemo.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -206,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				F51FC2AD1F2CDBAB00E6D00D /* TweetTableViewCell.xib */,
+				F5F0C0131F41DE5C005D19CF /* ShareDemo.xib */,
 			);
 			path = xibs;
 			sourceTree = "<group>";
@@ -466,9 +466,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F51FC25B1F2CCB8900E6D00D /* LaunchScreen.storyboard in Resources */,
-				F5422D4D1F41E3A800C4D677 /* ShareDemo.xib in Resources */,
 				F51FC2581F2CCB8900E6D00D /* Assets.xcassets in Resources */,
 				F51FC2561F2CCB8900E6D00D /* Main.storyboard in Resources */,
+				F5422D4F1F41ECB300C4D677 /* ShareDemo.xib in Resources */,
 				F51FC2AF1F2CDBAB00E6D00D /* TweetTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

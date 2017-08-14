@@ -18,17 +18,14 @@ class SettingsViewController: UIViewController, UITabBarControllerDelegate {
         super.viewDidLoad()
         
         tabBarController?.delegate = self
-        
-        if let hashtagValue = UserDefaults.standard.value(forKey: "hashtag") as? String {
-            hashtag.text = hashtagValue
-        }
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        //to do
+        if let hashtagValue = UserDefaults.standard.value(forKey: "hashtag") as? String {
+            hashtag.text = hashtagValue
+        }
     }
     
     @IBAction func hashtagEditingDidEnd(_ sender: UITextField) {

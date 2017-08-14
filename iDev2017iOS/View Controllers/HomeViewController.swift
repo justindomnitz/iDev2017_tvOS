@@ -17,13 +17,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        if let value = UserDefaults.standard.value(forKey: "hashtag") as? String {
-            hashtag = value
-        } else {
-            UserDefaults.standard.setValue(hashtag, forKey: "hashtag")
-            UserDefaults.standard.synchronize()
-        }
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -34,11 +27,22 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        handleHashtag()
+        
         //Clear Twitter data.
         tweets.removeAll()
         tableView.reloadData()
         
         getTwitterData()
+    }
+    
+    func handleHashtag() {
+        if let value = UserDefaults.standard.value(forKey: "hashtag") as? String {
+            hashtag = value
+        } else {
+            UserDefaults.standard.setValue(hashtag, forKey: "hashtag")
+            UserDefaults.standard.synchronize()
+        }
     }
 
     //MARK: Table view delegate methods

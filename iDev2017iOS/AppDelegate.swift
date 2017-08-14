@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         CloudKitUtils.cloudKitSetup(application, subscriptionIsLocallyCached: subscriptionIsLocallyCached) { cachedResult in
             self.subscriptionIsLocallyCached = cachedResult
         }
-        iCloudSetup()
+        KVSSetup()
         return true
     }
     
@@ -40,7 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func iCloudSetup() {
+    func KVSSetup() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(storeDidChange),
                                                name: NSUbiquitousKeyValueStore.didChangeExternallyNotification,
